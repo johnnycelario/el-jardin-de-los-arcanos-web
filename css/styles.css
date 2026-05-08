@@ -200,19 +200,17 @@ img { max-width: 100%; display: block; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('https://images.unsplash.com/photo-1600298882283-44a64ed0c9e1?w=1400&q=80');
-  background-size: cover;
-  background-position: center;
-  filter: brightness(0.35);
-  transform: scale(1.03);
-  transition: transform 8s ease;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 50%, rgba(107,63,160,0.45) 0%, transparent 70%),
+    radial-gradient(ellipse 60% 50% at 80% 30%, rgba(201,168,76,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 70% at 60% 80%, rgba(58,26,110,0.5) 0%, transparent 65%),
+    linear-gradient(145deg, #06060d 0%, #0e0820 40%, #120a1e 70%, #0a0a0f 100%);
 }
-.hero:hover .hero-bg { transform: scale(1.0); }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(10,10,15,0.7) 100%);
+  background: linear-gradient(to bottom, transparent 60%, rgba(10,10,15,0.85) 100%);
 }
 
 .hero-content {
