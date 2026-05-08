@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Jardín de Los Arcanos — Inicio</title>
+  <meta name="description" content="Un espacio donde la sanación, el crecimiento personal y la espiritualidad se entrelazan para guiarte hacia tu mejor versión." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://images.unsplash.com/photo-1508002366005-75a695ee2d17?w=120&q=80" alt="El Jardín de Los Arcanos" class="nav-logo-img" />
+      <span class="nav-logo-text">El Jardín de Los Arcanos</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+    </ul>
+    <button class="nav-search" id="searchToggle" aria-label="Buscar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="sobre-nosotros.html">Sobre Nosotros</a>
+  <a href="tienda.html">Tienda</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="servicios.html">Servicios</a>
+</div>
+
+<!-- SEARCH OVERLAY -->
+<div class="search-overlay" id="searchOverlay">
+  <button class="search-close" id="searchClose">×</button>
+  <input type="text" id="searchInput" placeholder="Buscar artículos, servicios..." />
+  <p style="color:var(--text-muted);font-size:0.85rem">Presiona Esc para cerrar</p>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content fade-up">
+    <span class="hero-eyebrow">✦ Bienvenido a tu espacio sagrado ✦</span>
+    <h1>Bienvenido al Jardín<br>de Los Arcanos</h1>
+    <p>Un espacio donde la sanación, el crecimiento personal y la espiritualidad se entrelazan para guiarte hacia tu mejor versión.</p>
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+      <a href="sobre-nosotros.html" class="btn btn-ghost">Empieza a Leer</a>
+      <a href="servicios.html" class="btn btn-primary">Ver Servicios</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="reveal">
+        <span class="stat-number">500+</span>
+        <span class="stat-label">Almas Guiadas</span>
+      </div>
+      <div class="reveal">
+        <span class="stat-number">8</span>
+        <span class="stat-label">Años de Experiencia</span>
+      </div>
+      <div class="reveal">
+        <span class="stat-number">15+</span>
+        <span class="stat-label">Servicios Holísticos</span>
+      </div>
+      <div class="reveal">
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Amor y Dedicación</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS DESTACADOS -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">✦ Lo que ofrecemos</span>
+      <h2>Nuestros Servicios</h2>
+      <p>Descubre las herramientas que tenemos para tu transformación personal y espiritual.</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card reveal">
+        <img src="https://images.unsplash.com/photo-1601929862195-b9560e0e3297?w=600&q=80" alt="Lectura de Tarot" class="card-img" />
+        <div class="card-body">
+          <span class="card-tag">✦ Adivinación</span>
+          <h3>Lectura de Tarot</h3>
+          <p>Descubre los mensajes que el universo tiene para ti a través de los arcanos mayores y menores.</p>
+          <a href="servicios.html" class="btn btn-outline">Más información</a>
+        </div>
+      </div>
+      <div class="card reveal">
+        <img src="https://images.unsplash.com/photo-1573126617899-41f1dffb196c?w=600&q=80" alt="Meditación y Sanación" class="card-img" />
+        <div class="card-body">
+          <span class="card-tag">✦ Sanación</span>
+          <h3>Meditación y Chakras</h3>
+          <p>Equilibra tu energía interior a través de técnicas de meditación guiada y armonización de chakras.</p>
+          <a href="servicios.html" class="btn btn-outline">Más información</a>
+        </div>
+      </div>
+      <div class="card reveal">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Cristaloterapia" class="card-img" />
+        <div class="card-body">
+          <span class="card-tag">✦ Terapia</span>
+          <h3>Cristaloterapia</h3>
+          <p>Utiliza el poder sanador de los cristales para restaurar el equilibrio energético en tu vida.</p>
+          <a href="servicios.html" class="btn btn-outline">Más información</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:48px">
+      <a href="servicios.html" class="btn btn-primary">Ver todos los servicios</a>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE NOSOTROS TEASER -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img reveal">
+        <img src="https://images.unsplash.com/photo-1574348103829-31dcbdc93cc9?w=700&q=80" alt="El Jardín de Los Arcanos" />
+      </div>
+      <div class="about-text reveal">
+        <span class="eyebrow" style="display:block;font-size:0.75rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:12px">✦ Nuestra historia</span>
+        <h2>Un espacio creado con amor e intención</h2>
+        <p>El Jardín de Los Arcanos nació de la profunda convicción de que cada ser humano tiene el potencial de sanar, crecer y encontrar su camino hacia la luz.</p>
+        <p>Desde nuestros inicios, hemos acompañado a cientos de almas en su viaje de autodescubrimiento, ofreciendo herramientas ancestrales y modernas para el despertar espiritual.</p>
+        <div class="about-values">
+          <span class="value-badge">🌿 Sanación</span>
+          <span class="value-badge">✨ Espiritualidad</span>
+          <span class="value-badge">🔮 Sabiduría</span>
+          <span class="value-badge">💫 Crecimiento</span>
+          <span class="value-badge">🌙 Intuición</span>
+        </div>
+        <a href="sobre-nosotros.html" class="btn btn-outline">Conoce nuestra historia</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIENDA PREVIEW -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">✦ Productos sagrados</span>
+      <h2>Nuestra Tienda</h2>
+      <p>Herramientas energéticas seleccionadas para apoyar tu camino espiritual.</p>
+    </div>
+    <div class="shop-grid" style="grid-template-columns:repeat(auto-fill,minmax(260px,1fr));display:grid;gap:28px">
+      <div class="product-card reveal" data-category="cristales">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1515630278258-407f994a1ab2?w=500&q=80" alt="Amatista" />
+          <span class="product-badge badge-new">Nuevo</span>
+        </div>
+        <div class="product-body">
+          <div class="product-category">Cristales</div>
+          <div class="product-name">Amatista Brasileña</div>
+          <div class="product-desc">Purificación, protección y conexión espiritual.</div>
+          <div class="product-footer">
+            <span class="product-price">$350</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal" data-category="tarot">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1600298882283-44a64ed0c9e1?w=500&q=80" alt="Tarot" />
+          <span class="product-badge badge-popular">Popular</span>
+        </div>
+        <div class="product-body">
+          <div class="product-category">Tarot</div>
+          <div class="product-name">Mazo Rider-Waite</div>
+          <div class="product-desc">El mazo de tarot más iconico para lecturas profundas.</div>
+          <div class="product-footer">
+            <span class="product-price">$580</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal" data-category="incienso">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&q=80" alt="Incienso" />
+        </div>
+        <div class="product-body">
+          <div class="product-category">Aromaterapia</div>
+          <div class="product-name">Set de Palo Santo</div>
+          <div class="product-desc">Limpieza energética y elevación del espíritu.</div>
+          <div class="product-footer">
+            <span class="product-price">$180</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card reveal" data-category="libros">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500&q=80" alt="Libros" />
+        </div>
+        <div class="product-body">
+          <div class="product-category">Libros</div>
+          <div class="product-name">Guía de Chakras</div>
+          <div class="product-desc">Comprende y equilibra tus centros energéticos.</div>
+          <div class="product-footer">
+            <span class="product-price">$290</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:48px">
+      <a href="tienda.html" class="btn btn-primary">Explorar toda la tienda</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">✦ Voces del jardín</span>
+      <h2>Lo que dicen nuestros clientes</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial reveal">
+        <div class="stars">★★★★★</div>
+        <p>El Jardín de Los Arcanos cambió mi perspectiva por completo. La lectura de tarot fue profundamente reveladora y me ayudó a entender situaciones que me tenían bloqueada.</p>
+        <div class="testimonial-author">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="María González" class="testimonial-avatar" />
+          <div>
+            <div class="testimonial-name">María González</div>
+            <div class="testimonial-role">Ciudad de México</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial reveal">
+        <div class="stars">★★★★★</div>
+        <p>La sesión de meditación y armonización de chakras fue una experiencia transformadora. Salí sintiéndome completamente renovada y con una claridad mental increíble.</p>
+        <div class="testimonial-author">
+          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Sofía Ramírez" class="testimonial-avatar" />
+          <div>
+            <div class="testimonial-name">Sofía Ramírez</div>
+            <div class="testimonial-role">Guadalajara</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial reveal">
+        <div class="stars">★★★★★</div>
+        <p>Compré varios cristales y el mazo de tarot. La calidad es excepcional y el envío llegó con mucho cuidado y amor. Definitivamente volvería a comprar aquí.</p>
+        <div class="testimonial-author">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" alt="Carlos Medina" class="testimonial-avatar" />
+          <div>
+            <div class="testimonial-name">Carlos Medina</div>
+            <div class="testimonial-role">Monterrey</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="container">
+    <h2 class="reveal">¿Lista para comenzar tu viaje?</h2>
+    <p class="reveal">Agenda una consulta y da el primer paso hacia tu transformación espiritual.</p>
+    <a href="contacto.html" class="btn btn-primary reveal">Contáctanos hoy</a>
+  </div>
+</div>
+
+<!-- NEWSLETTER -->
+<section class="section section-alt">
+  <div class="container text-center">
+    <div class="section-header reveal">
+      <span class="eyebrow">✦ Mantente conectado</span>
+      <h2>Únete a nuestra comunidad</h2>
+      <p>Recibe mensajes lunares, consejos espirituales y ofertas exclusivas directamente en tu correo.</p>
+    </div>
+    <form class="newsletter-form reveal" style="margin:0 auto">
+      <input type="email" placeholder="tu@correo.com" required />
+      <button type="submit">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="https://images.unsplash.com/photo-1508002366005-75a695ee2d17?w=120&q=80" alt="Logo" class="footer-logo-img" />
+          <span class="footer-logo-text">El Jardín de Los Arcanos</span>
+        </div>
+        <p class="footer-desc">Un espacio sagrado donde la sanación, el crecimiento personal y la espiritualidad se entrelazan para guiarte hacia tu mejor versión.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+          <a href="#" class="social-link" aria-label="Facebook">📘</a>
+          <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+          <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul class="footer-links">
+          <li><a href="servicios.html">Lectura de Tarot</a></li>
+          <li><a href="servicios.html">Meditación</a></li>
+          <li><a href="servicios.html">Cristaloterapia</a></li>
+          <li><a href="servicios.html">Astrología</a></li>
+          <li><a href="servicios.html">Reiki</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:hola@eljardindelosarcanos.shop">hola@eljardindelosarcanos.shop</a></li>
+          <li><a href="tel:+521234567890">+52 123 456 7890</a></li>
+          <li><a href="contacto.html">Agenda una cita</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2024 El Jardín de Los Arcanos. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

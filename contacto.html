@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto — El Jardín de Los Arcanos</title>
+  <meta name="description" content="Contáctanos para agendar tu consulta o resolver cualquier duda sobre nuestros servicios holísticos." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://images.unsplash.com/photo-1508002366005-75a695ee2d17?w=120&q=80" alt="El Jardín de Los Arcanos" class="nav-logo-img" />
+      <span class="nav-logo-text">El Jardín de Los Arcanos</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+    </ul>
+    <button class="nav-search" id="searchToggle" aria-label="Buscar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="sobre-nosotros.html">Sobre Nosotros</a>
+  <a href="tienda.html">Tienda</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="servicios.html">Servicios</a>
+</div>
+<div class="search-overlay" id="searchOverlay">
+  <button class="search-close" id="searchClose">×</button>
+  <input type="text" id="searchInput" placeholder="Buscar artículos, servicios..." />
+  <p style="color:var(--text-muted);font-size:0.85rem">Presiona Esc para cerrar</p>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1602523961358-f9f03dd557db?w=1400&q=80')"></div>
+  <div class="container page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>Contacto</span>
+    </div>
+    <h1>Contáctanos</h1>
+    <p>Estamos aquí para guiarte. Escríbenos y con gusto te ayudamos a encontrar el servicio que tu alma necesita.</p>
+  </div>
+</div>
+
+<!-- CONTACTO PRINCIPAL -->
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- INFO -->
+      <div class="contact-info reveal">
+        <h2>Hablemos</h2>
+        <p>Puedes contactarnos por cualquiera de los siguientes medios. Respondemos con amor y en el menor tiempo posible, generalmente dentro de las primeras 24 horas.</p>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📧</div>
+          <div class="contact-item-text">
+            <strong>Correo Electrónico</strong>
+            <p><a href="mailto:hola@eljardindelosarcanos.shop" style="color:var(--text-secondary)">hola@eljardindelosarcanos.shop</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📱</div>
+          <div class="contact-item-text">
+            <strong>WhatsApp</strong>
+            <p><a href="https://wa.me/521234567890" style="color:var(--text-secondary)">+52 123 456 7890</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">🕐</div>
+          <div class="contact-item-text">
+            <strong>Horario de Atención</strong>
+            <p>Lunes a Viernes: 9:00 – 19:00<br>Sábados: 10:00 – 15:00</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div class="contact-item-text">
+            <strong>Ubicación</strong>
+            <p>Ciudad de México, México<br>Consultas también virtuales</p>
+          </div>
+        </div>
+
+        <div style="margin-top:32px">
+          <p style="color:var(--text-secondary);font-size:0.85rem;margin-bottom:16px">Síguenos en redes sociales:</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram" title="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="Facebook" title="Facebook">📘</a>
+            <a href="#" class="social-link" aria-label="TikTok" title="TikTok">🎵</a>
+            <a href="#" class="social-link" aria-label="WhatsApp" title="WhatsApp">💬</a>
+            <a href="#" class="social-link" aria-label="YouTube" title="YouTube">▶️</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMULARIO -->
+      <div class="reveal">
+        <div class="contact-form" id="contactFormWrap">
+          <h3>Envíanos un mensaje</h3>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="tu@correo.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono (opcional)</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+52 555 000 0000" />
+            </div>
+            <div class="form-group">
+              <label for="servicio">Servicio de interés</label>
+              <select id="servicio" name="servicio">
+                <option value="">Selecciona un servicio...</option>
+                <option value="tarot">Lectura de Tarot</option>
+                <option value="meditacion">Meditación Guiada</option>
+                <option value="cristaloterapia">Cristaloterapia</option>
+                <option value="astrologia">Carta Astral</option>
+                <option value="reiki">Reiki Universal</option>
+                <option value="rituales">Rituales de Luna</option>
+                <option value="numerologia">Numerología</option>
+                <option value="paquete">Paquetes de Acompañamiento</option>
+                <option value="tienda">Productos de la Tienda</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="modalidad">Modalidad preferida</label>
+              <select id="modalidad" name="modalidad">
+                <option value="">Selecciona una modalidad...</option>
+                <option value="virtual">Virtual (videollamada)</option>
+                <option value="presencial">Presencial (CDMX)</option>
+                <option value="indiferente">Me es indiferente</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos qué buscas, qué situaciones deseas explorar o cualquier pregunta que tengas..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Enviar mensaje ✦</button>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            <div class="success-icon">🌙</div>
+            <h3 style="font-family:var(--font-heading);font-size:1.8rem;margin-bottom:12px">¡Mensaje recibido!</h3>
+            <p style="color:var(--text-secondary)">Gracias por escribirnos. Te contactaremos dentro de las próximas 24 horas con amor y dedicación.</p>
+            <a href="index.html" class="btn btn-outline" style="margin-top:24px;display:inline-block">Volver al inicio</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAPA / HORARIOS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">✦ Información adicional</span>
+      <h2>Preguntas antes de escribir</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-question">¿Cuánto tiempo tarda la respuesta? <span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Respondemos todos los mensajes dentro de las primeras 24 horas en días hábiles. Los mensajes recibidos los fines de semana o en días festivos serán atendidos el siguiente día hábil.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">¿Cómo se realiza el pago? <span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Aceptamos transferencia bancaria, tarjeta de crédito/débito y PayPal. Para las sesiones se solicita un depósito del 50% al confirmar la cita. El saldo restante se liquida al inicio de la sesión.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">¿Puedo reagendar mi cita? <span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Sí, puedes reagendar con al menos 24 horas de anticipación sin costo adicional. Las cancelaciones con menos de 24 horas o el no presentarse a la cita sin aviso implican la pérdida del depósito.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">¿Las sesiones virtuales son igual de efectivas? <span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">Totalmente. La energía no tiene barreras geográficas. Nuestras sesiones virtuales tienen exactamente la misma profundidad y efectividad que las presenciales. Se realizan por Zoom, Google Meet o WhatsApp Video.</div>
+        </div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-question">¿Puedo pedir una sesión como regalo? <span class="faq-icon">+</span></button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">¡Sí! Ofrecemos tarjetas de regalo para todos nuestros servicios. Son el regalo perfecto para quienes buscan crecimiento personal y bienestar espiritual. Contáctanos para más detalles.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="container">
+    <h2 class="reveal">¿Prefieres hablar por WhatsApp?</h2>
+    <p class="reveal">Escríbenos directamente y con gusto te atendemos de forma más inmediata.</p>
+    <a href="https://wa.me/521234567890?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios" class="btn btn-primary reveal" target="_blank" rel="noopener">Escribir por WhatsApp 💬</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="https://images.unsplash.com/photo-1508002366005-75a695ee2d17?w=120&q=80" alt="Logo" class="footer-logo-img" />
+          <span class="footer-logo-text">El Jardín de Los Arcanos</span>
+        </div>
+        <p class="footer-desc">Un espacio sagrado donde la sanación, el crecimiento personal y la espiritualidad se entrelazan para guiarte hacia tu mejor versión.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+          <a href="#" class="social-link" aria-label="Facebook">📘</a>
+          <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+          <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul class="footer-links">
+          <li><a href="servicios.html">Lectura de Tarot</a></li>
+          <li><a href="servicios.html">Meditación</a></li>
+          <li><a href="servicios.html">Cristaloterapia</a></li>
+          <li><a href="servicios.html">Astrología</a></li>
+          <li><a href="servicios.html">Reiki</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:hola@eljardindelosarcanos.shop">hola@eljardindelosarcanos.shop</a></li>
+          <li><a href="tel:+521234567890">+52 123 456 7890</a></li>
+          <li><a href="contacto.html">Agenda una cita</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2024 El Jardín de Los Arcanos. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

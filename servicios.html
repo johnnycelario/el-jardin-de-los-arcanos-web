@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Servicios — El Jardín de Los Arcanos</title>
+  <meta name="description" content="Descubre todos nuestros servicios holísticos: tarot, meditación, cristaloterapia, astrología, reiki y más." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://images.unsplash.com/photo-1508002366005-75a695ee2d17?w=120&q=80" alt="El Jardín de Los Arcanos" class="nav-logo-img" />
+      <span class="nav-logo-text">El Jardín de Los Arcanos</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+    </ul>
+    <button class="nav-search" id="searchToggle" aria-label="Buscar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="sobre-nosotros.html">Sobre Nosotros</a>
+  <a href="tienda.html">Tienda</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="servicios.html">Servicios</a>
+</div>
+<div class="search-overlay" id="searchOverlay">
+  <button class="search-close" id="searchClose">×</button>
+  <input type="text" id="searchInput" placeholder="Buscar artículos, servicios..." />
+  <p style="color:var(--text-muted);font-size:0.85rem">Presiona Esc para cerrar</p>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1601929862195-b9560e0e3297?w=1400&q=80')"></div>
+  <div class="container page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>Servicios</span>
+    </div>
+    <h1>Nuestros Servicios</h1>
+    <p>Herramientas holísticas para tu transformación personal, espiritual y energética.</p>
+  </div>
+</div>
+
+<!-- SERVICIOS PRINCIPALES -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">✦ Para tu alma</span>
+      <h2>¿Qué ofrecemos?</h2>
+      <p>Cada servicio está diseñado para acompañarte en tu camino con intención, cuidado y profundidad.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card reveal">
+        <span class="service-icon">🔮</span>
+        <h3>Lectura de Tarot</h3>
+        <p>Accede a los mensajes del universo a través de los arcanos. La lectura de tarot no predice el futuro, te muestra las energías presentes y las posibilidades de tu camino.</p>
+        <span class="service-price">$450 <span>/ sesión 45 min</span></span>
+        <a href="contacto.html" class="btn btn-outline">Reservar</a>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="service-icon">🧘</span>
+        <h3>Meditación Guiada</h3>
+        <p>Sesiones individuales o grupales de meditación adaptadas a tu nivel y necesidades. Técnicas de respiración, visualización y presencia plena para calmar la mente.</p>
+        <span class="service-price">$350 <span>/ sesión 60 min</span></span>
+        <a href="contacto.html" class="btn btn-outline">Reservar</a>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="service-icon">💎</span>
+        <h3>Cristaloterapia</h3>
+        <p>Utiliza la energía vibracional de los cristales para restaurar el equilibrio en tu campo energético. Colocación de piedras en puntos específicos del cuerpo y chakras.</p>
+        <span class="service-price">$500 <span>/ sesión 60 min</span></span>
+        <a href="contacto.html" class="btn btn-outline">Reservar</a>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="service-icon">⭐</span>
+        <h3>Carta Astral</h3>
+        <p>Análisis completo de tu mapa natal: planetas, casas, aspectos e interpretación de tu propósito de vida, talentos y desafíos. Incluye informe escrito detallado.</p>
+        <span class="service-price">$650 <span>/ sesión 90 min</span></span>
+        <a href="contacto.html" class="btn btn-outline">Reservar</a>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="service-icon">✋</span>
+        <h3>Reiki Universal</h3>
+        <p>Técnica de sanación energética que canaliza la energía vital universal para restablecer el equilibrio físico, mental y espiritual. Profundamente relajante y sanador.</p>
+        <span class="service-price">$480 <span>/ sesión 60 min</span></span>
+        <a href="contacto.html" class="btn btn-outline">Reservar</a>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="service-icon">🌙</span>
+        <h3>Rituales de Luna</h3>
+        <p>Ceremonias de luna nueva y luna llena para manifestación y liberación. Aprende a trabajar con los ciclos lunares para potenciar tus intenciones y soltarte del pasado.</p>
+        <span class="service-price">$380 <span>/ ceremonia grupal</span></span>
+        <a href="contacto.html" class="btn btn-outline">Reservar</a>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="service-icon">🔢</span>
+        <h3>Numerología</h3>
+        <p>Descubre los mensajes ocultos en tu nombre y fecha de nacimiento. La numerología revela tu camino de vida, talentos innatos y el propósito de tu alma en esta encarnación.</p>
+        <span class="service-price">$420 <span>/ lectura completa</span></span>
+        <a href="contacto.html" class="btn btn-outline">Reservar</a>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="service-icon">🌿</span>
+        <h3>Herbalismo Sagrado</h3>
+        <p>Aprende a trabajar con las plantas medicinales y sagradas para fortalecer tu bienestar físico y espiritual. Consultas personalizadas y preparación de remedios.</p>
+        <span class="service-price">$400 <span>/ consulta 60 min</span></span>
+        <a href="contacto.html" class="btn btn-outline">Reservar</a>
+      </div>
+
+      <div class="service-card reveal">
+        <span class="service-icon">📿</span>
+        <h3>Lectura de Oráculo</h3>
+        <p>Los oráculos ofrecen mensajes directos de la energía universal y tus guías espirituales. Combinamos diferentes mazos de oráculo para una lectura profunda y personalizada.</p>
+        <span class="service-price">$350 <span>/ sesión 45 min</span></span>
+        <a href="contacto.html" class="btn btn-outline">Reservar</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PAQUETES -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">✦ Mayor transformación</span>
+      <h2>Paquetes de Acompañamiento</h2>
+      <p>Para quienes desean un proceso de transformación más profundo y sostenido en el tiempo.</p>
+    </div>
+    <div class="cards-grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+      <div class="card reveal">
+        <div class="card-body" style="padding:40px;text-align:center">
+          <div style="font-size:2rem;color:var(--gold);margin-bottom:8px">✦</div>
+          <h3 style="font-size:1.5rem;margin-bottom:8px">Despertar</h3>
+          <p style="color:var(--gold);font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:20px">Paquete Inicial</p>
+          <ul style="list-style:none;color:var(--text-secondary);font-size:0.9rem;margin-bottom:28px;text-align:left">
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)">✓ 2 lecturas de tarot</li>
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)">✓ 1 sesión de meditación</li>
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)">✓ 10% descuento en tienda</li>
+            <li style="padding:8px 0">✓ Soporte por WhatsApp</li>
+          </ul>
+          <div style="font-family:var(--font-heading);font-size:2.2rem;color:var(--gold);margin-bottom:20px">$1,100</div>
+          <a href="contacto.html" class="btn btn-outline" style="width:100%;display:block;text-align:center">Elegir este plan</a>
+        </div>
+      </div>
+      <div class="card reveal" style="border-color:var(--gold-dark);position:relative;overflow:visible">
+        <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold);color:#0a0a0f;font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:6px 20px;border-radius:999px;white-space:nowrap">Más popular</div>
+        <div class="card-body" style="padding:40px;text-align:center">
+          <div style="font-size:2rem;color:var(--gold);margin-bottom:8px">✦✦</div>
+          <h3 style="font-size:1.5rem;margin-bottom:8px">Transformación</h3>
+          <p style="color:var(--gold);font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:20px">Paquete Completo</p>
+          <ul style="list-style:none;color:var(--text-secondary);font-size:0.9rem;margin-bottom:28px;text-align:left">
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)">✓ 4 lecturas de tarot</li>
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)">✓ 3 sesiones de meditación</li>
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)">✓ 1 sesión de reiki</li>
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)">✓ Carta astral completa</li>
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)">✓ 15% descuento en tienda</li>
+            <li style="padding:8px 0">✓ Soporte prioritario</li>
+          </ul>
+          <div style="font-family:var(--font-heading);font-size:2.2rem;color:var(--gold);margin-bottom:20px">$2,800</div>
+          <a href="contacto.html" class="btn btn-primary" style="width:100%;display:block;text-align:center">Elegir este plan</a>
+        </div>
+      </div>
+      <div class="card reveal">
+        <div class="card-body" style="padding:40px;text-align:center">
+          <div style="font-size:2rem;color:var(--gold);margin-bottom:8px">✦✦✦</div>
+          <h3 style="font-size:1.5rem;margin-bottom:8px">Iluminación</h3>
+          <p style="color:var(--gold);font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:20px">Paquete Premium</p>
+          <ul style="list-style:none;color:var(--text-secondary);font-size:0.9rem;margin-bottom:28px;text-align:left">
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)">✓ Todo del plan Transformación</li>
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)">✓ Acompañamiento 3 meses</li>
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)">✓ Rituales de luna (x3)</li>
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)">✓ Kit de cristales de regalo</li>
+            <li style="padding:8px 0;border-bottom:1px solid var(--border)">✓ 20% descuento permanente</li>
+            <li style="padding:8px 0">✓ Acceso a retiros especiales</li>
+          </ul>
+          <div style="font-family:var(--font-heading);font-size:2.2rem;color:var(--gold);margin-bottom:20px">$5,200</div>
+          <a href="contacto.html" class="btn btn-outline" style="width:100%;display:block;text-align:center">Elegir este plan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="section">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">✦ ¿Cómo funciona?</span>
+      <h2>El proceso paso a paso</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;text-align:center">
+      <div class="reveal">
+        <div style="width:64px;height:64px;border-radius:50%;background:rgba(201,168,76,0.1);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:var(--font-heading);font-size:1.5rem;color:var(--gold)">01</div>
+        <h3 style="font-size:1.2rem;margin-bottom:10px">Escríbenos</h3>
+        <p style="color:var(--text-secondary);font-size:0.9rem">Contáctanos por WhatsApp, correo o formulario. Cuéntanos qué buscas.</p>
+      </div>
+      <div class="reveal">
+        <div style="width:64px;height:64px;border-radius:50%;background:rgba(201,168,76,0.1);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:var(--font-heading);font-size:1.5rem;color:var(--gold)">02</div>
+        <h3 style="font-size:1.2rem;margin-bottom:10px">Elige tu servicio</h3>
+        <p style="color:var(--text-secondary);font-size:0.9rem">Te orientamos para elegir el servicio que mejor se adapta a lo que tu alma necesita.</p>
+      </div>
+      <div class="reveal">
+        <div style="width:64px;height:64px;border-radius:50%;background:rgba(201,168,76,0.1);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:var(--font-heading);font-size:1.5rem;color:var(--gold)">03</div>
+        <h3 style="font-size:1.2rem;margin-bottom:10px">Agenda tu cita</h3>
+        <p style="color:var(--text-secondary);font-size:0.9rem">Confirmamos fecha y hora. Las sesiones son presenciales o por videollamada.</p>
+      </div>
+      <div class="reveal">
+        <div style="width:64px;height:64px;border-radius:50%;background:rgba(201,168,76,0.1);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:var(--font-heading);font-size:1.5rem;color:var(--gold)">04</div>
+        <h3 style="font-size:1.2rem;margin-bottom:10px">Transforma tu vida</h3>
+        <p style="color:var(--text-secondary);font-size:0.9rem">Vive la experiencia con mente abierta. Tu transformación comienza en el momento que decides.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="section section-dark">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="eyebrow">✦ Experiencias reales</span>
+      <h2>Lo que dicen nuestros clientes</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial reveal">
+        <div class="stars">★★★★★</div>
+        <p>La sesión de cristaloterapia fue una de las experiencias más profundas de mi vida. Sentí cómo la energía se movía y sanaba bloqueos que cargaba desde hace años. Increíble.</p>
+        <div class="testimonial-author">
+          <img src="https://images.unsplash.com/photo-1499155286265-79a9dc9c6380?w=100&q=80" alt="Laura Jiménez" class="testimonial-avatar" />
+          <div>
+            <div class="testimonial-name">Laura Jiménez</div>
+            <div class="testimonial-role">Ciudad de México</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial reveal">
+        <div class="stars">★★★★★</div>
+        <p>Contrate el paquete Transformación y fue la mejor inversión que he hecho en mí misma. Luna es una guía excepcional, empática y profundamente sabia. Totalmente recomendada.</p>
+        <div class="testimonial-author">
+          <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&q=80" alt="Patricia Morales" class="testimonial-avatar" />
+          <div>
+            <div class="testimonial-name">Patricia Morales</div>
+            <div class="testimonial-role">Puebla</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial reveal">
+        <div class="stars">★★★★★</div>
+        <p>Mi carta astral me abrió los ojos a aspectos de mí mismo que nunca había reconocido. Andrés tiene una capacidad única para explicar lo complejo de forma simple y práctica.</p>
+        <div class="testimonial-author">
+          <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=100&q=80" alt="Roberto Castillo" class="testimonial-avatar" />
+          <div>
+            <div class="testimonial-name">Roberto Castillo</div>
+            <div class="testimonial-role">Guadalajara</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-band">
+  <div class="container">
+    <h2 class="reveal">¿Listo para comenzar tu transformación?</h2>
+    <p class="reveal">Agenda tu primera consulta hoy y da el paso más importante de tu vida.</p>
+    <a href="contacto.html" class="btn btn-primary reveal">Reservar mi sesión</a>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="https://images.unsplash.com/photo-1508002366005-75a695ee2d17?w=120&q=80" alt="Logo" class="footer-logo-img" />
+          <span class="footer-logo-text">El Jardín de Los Arcanos</span>
+        </div>
+        <p class="footer-desc">Un espacio sagrado donde la sanación, el crecimiento personal y la espiritualidad se entrelazan para guiarte hacia tu mejor versión.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+          <a href="#" class="social-link" aria-label="Facebook">📘</a>
+          <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+          <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul class="footer-links">
+          <li><a href="servicios.html">Lectura de Tarot</a></li>
+          <li><a href="servicios.html">Meditación</a></li>
+          <li><a href="servicios.html">Cristaloterapia</a></li>
+          <li><a href="servicios.html">Astrología</a></li>
+          <li><a href="servicios.html">Reiki</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:hola@eljardindelosarcanos.shop">hola@eljardindelosarcanos.shop</a></li>
+          <li><a href="tel:+521234567890">+52 123 456 7890</a></li>
+          <li><a href="contacto.html">Agenda una cita</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2024 El Jardín de Los Arcanos. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tienda — El Jardín de Los Arcanos</title>
+  <meta name="description" content="Explora nuestra selección de cristales, mazos de tarot, inciensos y herramientas espirituales seleccionadas con amor." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="https://images.unsplash.com/photo-1508002366005-75a695ee2d17?w=120&q=80" alt="El Jardín de Los Arcanos" class="nav-logo-img" />
+      <span class="nav-logo-text">El Jardín de Los Arcanos</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+      <li><a href="tienda.html">Tienda</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+    </ul>
+    <button class="nav-search" id="searchToggle" aria-label="Buscar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="sobre-nosotros.html">Sobre Nosotros</a>
+  <a href="tienda.html">Tienda</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="servicios.html">Servicios</a>
+</div>
+<div class="search-overlay" id="searchOverlay">
+  <button class="search-close" id="searchClose">×</button>
+  <input type="text" id="searchInput" placeholder="Buscar artículos, servicios..." />
+  <p style="color:var(--text-muted);font-size:0.85rem">Presiona Esc para cerrar</p>
+</div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1515630278258-407f994a1ab2?w=1400&q=80')"></div>
+  <div class="container page-hero-content">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span>Tienda</span>
+    </div>
+    <h1>Nuestra Tienda</h1>
+    <p>Herramientas sagradas seleccionadas con amor para acompañarte en tu camino espiritual.</p>
+  </div>
+</div>
+
+<!-- TIENDA -->
+<section class="section">
+  <div class="container">
+
+    <!-- FILTROS -->
+    <div class="shop-filters reveal">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="cristales">Cristales</button>
+      <button class="filter-btn" data-filter="tarot">Tarot</button>
+      <button class="filter-btn" data-filter="incienso">Aromaterapia</button>
+      <button class="filter-btn" data-filter="libros">Libros</button>
+      <button class="filter-btn" data-filter="joyeria">Joyería</button>
+      <button class="filter-btn" data-filter="velas">Velas</button>
+    </div>
+
+    <!-- PRODUCTOS -->
+    <div class="shop-grid">
+
+      <!-- CRISTALES -->
+      <div class="product-card reveal" data-category="cristales">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1515630278258-407f994a1ab2?w=500&q=80" alt="Amatista" />
+          <span class="product-badge badge-new">Nuevo</span>
+        </div>
+        <div class="product-body">
+          <div class="product-category">Cristales</div>
+          <div class="product-name">Amatista Brasileña</div>
+          <div class="product-desc">Purificación, protección y conexión espiritual profunda.</div>
+          <div class="product-footer">
+            <span class="product-price">$350</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="cristales">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="Cuarzo Rosa" />
+        </div>
+        <div class="product-body">
+          <div class="product-category">Cristales</div>
+          <div class="product-name">Cuarzo Rosa Natural</div>
+          <div class="product-desc">Amor propio, compasión y apertura del corazón.</div>
+          <div class="product-footer">
+            <span class="product-price">$280</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="cristales">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1573668535856-3eb10a5efde3?w=500&q=80" alt="Obsidiana" />
+          <span class="product-badge badge-popular">Popular</span>
+        </div>
+        <div class="product-body">
+          <div class="product-category">Cristales</div>
+          <div class="product-name">Obsidiana Negra</div>
+          <div class="product-desc">Protección energética y liberación de energías negativas.</div>
+          <div class="product-footer">
+            <span class="product-price">$220</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAROT -->
+      <div class="product-card reveal" data-category="tarot">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1600298882283-44a64ed0c9e1?w=500&q=80" alt="Rider-Waite" />
+          <span class="product-badge badge-popular">Popular</span>
+        </div>
+        <div class="product-body">
+          <div class="product-category">Tarot</div>
+          <div class="product-name">Mazo Rider-Waite</div>
+          <div class="product-desc">El mazo de tarot más icónico, ideal para principiantes y expertos.</div>
+          <div class="product-footer">
+            <span class="product-price">$580</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="tarot">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1601929862195-b9560e0e3297?w=500&q=80" alt="Tarot Vintage" />
+          <span class="product-badge badge-new">Nuevo</span>
+        </div>
+        <div class="product-body">
+          <div class="product-category">Tarot</div>
+          <div class="product-name">Tarot de los Arcanos Sagrados</div>
+          <div class="product-desc">Edición especial con ilustraciones botánicas y simbolismo profundo.</div>
+          <div class="product-footer">
+            <span class="product-price">$750</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- INCIENSO -->
+      <div class="product-card reveal" data-category="incienso">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&q=80" alt="Palo Santo" />
+        </div>
+        <div class="product-body">
+          <div class="product-category">Aromaterapia</div>
+          <div class="product-name">Set de Palo Santo</div>
+          <div class="product-desc">Limpieza energética del espacio y elevación del espíritu.</div>
+          <div class="product-footer">
+            <span class="product-price">$180</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="incienso">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1604480132736-44c188fe4d20?w=500&q=80" alt="Salvia" />
+          <span class="product-badge badge-popular">Popular</span>
+        </div>
+        <div class="product-body">
+          <div class="product-category">Aromaterapia</div>
+          <div class="product-name">Salvia Blanca del Desierto</div>
+          <div class="product-desc">Purificación ancestral y limpieza de energías estancadas.</div>
+          <div class="product-footer">
+            <span class="product-price">$150</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIBROS -->
+      <div class="product-card reveal" data-category="libros">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500&q=80" alt="Guía de Chakras" />
+        </div>
+        <div class="product-body">
+          <div class="product-category">Libros</div>
+          <div class="product-name">Guía Completa de Chakras</div>
+          <div class="product-desc">Comprende, equilibra y activa tus centros energéticos.</div>
+          <div class="product-footer">
+            <span class="product-price">$290</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="libros">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?w=500&q=80" alt="Tarot para Principiantes" />
+          <span class="product-badge badge-new">Nuevo</span>
+        </div>
+        <div class="product-body">
+          <div class="product-category">Libros</div>
+          <div class="product-name">Tarot para el Alma Moderna</div>
+          <div class="product-desc">Aprende a leer el tarot de forma intuitiva y práctica.</div>
+          <div class="product-footer">
+            <span class="product-price">$320</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- JOYERÍA -->
+      <div class="product-card reveal" data-category="joyeria">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500&q=80" alt="Collar Luna" />
+          <span class="product-badge badge-new">Nuevo</span>
+        </div>
+        <div class="product-body">
+          <div class="product-category">Joyería</div>
+          <div class="product-name">Collar Luna Llena</div>
+          <div class="product-desc">Plata de ley 925 con símbolo lunar, energizado bajo la luna llena.</div>
+          <div class="product-footer">
+            <span class="product-price">$480</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card reveal" data-category="joyeria">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=500&q=80" alt="Pulsera Chakra" />
+          <span class="product-badge badge-popular">Popular</span>
+        </div>
+        <div class="product-body">
+          <div class="product-category">Joyería</div>
+          <div class="product-name">Pulsera de los 7 Chakras</div>
+          <div class="product-desc">Piedras naturales correspondientes a cada chakra, para equilibrio total.</div>
+          <div class="product-footer">
+            <span class="product-price">$380</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- VELAS -->
+      <div class="product-card reveal" data-category="velas">
+        <div class="product-img-wrap">
+          <img src="https://images.unsplash.com/photo-1602523961358-f9f03dd557db?w=500&q=80" alt="Velas Rituales" />
+        </div>
+        <div class="product-body">
+          <div class="product-category">Velas</div>
+          <div class="product-name">Set Velas Rituales</div>
+          <div class="product-desc">7 velas de cera de abeja con hierbas y aceites esenciales sagrados.</div>
+          <div class="product-footer">
+            <span class="product-price">$260</span>
+            <button class="add-cart" title="Agregar al carrito">+</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section section-alt">
+  <div class="container text-center">
+    <div class="section-header reveal">
+      <span class="eyebrow">✦ Ofertas exclusivas</span>
+      <h2>Suscríbete y obtén 10% de descuento</h2>
+      <p>Recibe alertas de nuevos productos, promociones especiales y contenido espiritual exclusivo.</p>
+    </div>
+    <form class="newsletter-form reveal" style="margin:0 auto">
+      <input type="email" placeholder="tu@correo.com" required />
+      <button type="submit">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="https://images.unsplash.com/photo-1508002366005-75a695ee2d17?w=120&q=80" alt="Logo" class="footer-logo-img" />
+          <span class="footer-logo-text">El Jardín de Los Arcanos</span>
+        </div>
+        <p class="footer-desc">Un espacio sagrado donde la sanación, el crecimiento personal y la espiritualidad se entrelazan para guiarte hacia tu mejor versión.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">📷</a>
+          <a href="#" class="social-link" aria-label="Facebook">📘</a>
+          <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+          <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+          <li><a href="tienda.html">Tienda</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categorías</h4>
+        <ul class="footer-links">
+          <li><a href="tienda.html">Cristales</a></li>
+          <li><a href="tienda.html">Tarot</a></li>
+          <li><a href="tienda.html">Aromaterapia</a></li>
+          <li><a href="tienda.html">Joyería</a></li>
+          <li><a href="tienda.html">Libros</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:hola@eljardindelosarcanos.shop">hola@eljardindelosarcanos.shop</a></li>
+          <li><a href="tel:+521234567890">+52 123 456 7890</a></li>
+          <li><a href="contacto.html">Agenda una cita</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2024 El Jardín de Los Arcanos. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
